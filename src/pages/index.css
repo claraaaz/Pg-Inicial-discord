@@ -1,0 +1,101 @@
+/* Reset geral: zera margens e paddings padrão dos navegadores */
+* {
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box; /* Faz com que padding e borda fiquem dentro do tamanho do elemento */
+}
+
+/* Estiliza o corpo da página */
+body {
+    background-color: #5865f2; /* Define um fundo roxo/azulado no estilo Discord */
+    width: 100vw; /* Ocupa 100% da largura da janela */
+    height: 100vh; /* Ocupa 100% da altura da janela */
+}
+
+/* Cabeçalho principal com logo e menu */
+.cabecalho {
+    display: flex; /* Ativa o flexbox */
+    flex-direction: row; /* Elementos em linha (horizontal) */
+    justify-content: space-around; /* Espaço uniforme entre logo e menu */
+    align-items: center; /* Alinha verticalmente ao centro */
+    padding: 20px 40px; /* Espaço interno nas laterais e em cima/baixo */
+}
+
+/* Imagem de texto do logo "Discord" */
+.discord {
+    width: 6vw; /* Tamanho proporcional à largura da tela */
+}
+
+/* Ícone da logo do Discord (aquele símbolo) */
+.icon {
+    width: 2vw;
+    margin-top: 10px; /* Desce um pouco pra alinhar com o texto */
+}
+
+/* Container com os links de navegação */
+.opcoes {
+    display: flex;
+    flex-direction: row; /* Links um ao lado do outro */
+    justify-content: space-around; /* Espaçamento entre os links */
+}
+
+/* Estilo de cada link do menu */
+.opcoes a {
+    margin-right: 10px; /* Espaço entre os links (último pode sobrar) */
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    color: white; /* Texto branco */
+    font-family: 'font3'; /* Fonte personalizada (deve estar no fonts.css) */
+}
+
+/* Botão especial (ex: "Baixar") */
+button {
+    width: 4vw;
+    height: 4vh;
+    border: none; /* Sem borda */
+    border-radius: 20px; /* Bordas arredondadas */
+    background-color: white; /* Fundo branco */
+    color: black; /* Texto preto */
+}
+
+/* Área principal com texto à esquerda e imagem à direita */
+.meio {
+    display: flex; /* Layout flexível */
+    flex-direction: row; /* Texto e imagem lado a lado */
+    align-items: center; /* Alinha no centro verticalmente */
+    justify-content: center; /* Centraliza os dois no meio da tela */
+    height: calc(100vh - 100px); /* Usa toda a tela, descontando o cabeçalho */
+    padding: 0 80px; /* Espaçamento interno nas laterais */
+    gap: 60px; /* Espaço entre texto e imagem */
+}
+
+/* Bloco que agrupa o título e o subtítulo */
+.text {
+    display: flex;
+    flex-direction: column; /* Empilha título e parágrafo */
+    justify-content: center;
+    align-items: flex-start; /* Alinha o texto à esquerda */
+    max-width: 600px; /* Limita o tamanho do bloco pra não ficar largo demais */
+}
+
+/* Título principal */
+.meio p {
+    font-size: 40px; /* Tamanho grande pra chamar atenção */
+    font-family: 'font7'; /* Fonte personalizada (definida em fonts.css) */
+    color: white; /* Texto branco */
+    font-weight: bold; /* Texto em negrito */
+}
+
+/* Subtítulo abaixo do título */
+.meio h5 {
+    color: white; /* Texto branco */
+    font-family: 'font4'; /* Fonte personalizada */
+    font-size: 14px; /* Tamanho menor que o título */
+    line-height: 1.5; /* Espaçamento entre as linhas do parágrafo */
+}
+
+/* Imagem decorativa do lado direito */
+.meioimg {
+    width: 500px; /* Largura fixa */
+    height: auto; /* Altura ajusta automaticamente pra manter proporção */
+    object-fit: contain; /* Garante que a imagem não fique distorcida */
+}
